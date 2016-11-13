@@ -33,7 +33,11 @@ Plugin 'vim-syntastic/syntastic'
 " File Tree plugin NERDTree
 Plugin 'scrooloose/nerdtree'
 " Auto complete plugin
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
+" colorscheme
+Plugin 'tomasr/molokai'
+" Plugin 'altercation/vim-colors-solarized'
+Plugin 'inside/vim-search-pulse'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -51,3 +55,11 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 " // end of vim plugin manager Vundle
 set hlsearch
+set incsearch
+
+syntax on
+colorscheme molokai
+set t_Co=256
+
+set cursorcolumn
+set cursorline
