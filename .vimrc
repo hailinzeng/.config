@@ -38,6 +38,16 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tomasr/molokai'
 " Plugin 'altercation/vim-colors-solarized'
 Plugin 'inside/vim-search-pulse'
+" additional syntax highlighting
+Plugin 'octol/vim-cpp-enhanced-highlight'
+" visually displaying indent
+Plugin 'nathanaelkane/vim-indent-guides'
+" fast jump to search matched, \\s
+Plugin 'Lokaltog/vim-easymotion'
+" class outline viewer
+Plugin 'majutsushi/tagbar'
+" fuzzy open file
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,10 +66,30 @@ filetype plugin indent on    " required
 " // end of vim plugin manager Vundle
 set hlsearch
 set incsearch
+set ignorecase
 
 syntax on
+filetype plugin on
 colorscheme molokai
 set t_Co=256
 
+"if (&filetype=='c' || &filetype=='cpp' || &filetype=='h')
+  autocmd VimEnter * NERDTree
+  autocmd VimEnter * wincmd p
+
+  " class outline viewer : F8
+  nmap <F8> :TagbarToggle<CR>
+"endif
+
 set cursorcolumn
 set cursorline
+
+set number
+
+
+" 随 vim 自启动
+let g:indent_guides_enable_on_vim_startup=1
+" 从第二层开始可视化显示缩进
+let g:indent_guides_start_level=2
+" 色块宽度
+let g:indent_guides_guide_size=1

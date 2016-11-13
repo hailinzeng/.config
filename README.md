@@ -10,3 +10,5 @@ development configuration under Ubuntu/Mac
  * install: `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
  * configure: `cd ~; wget https://raw.githubusercontent.com/hailinzeng/dev_conf/master/.vimrc`
  * launch vim and run `:PluginInstall`
+
+[use vim as ide](https://github.com/yangyangwithgnu/use_vim_as_ide)
