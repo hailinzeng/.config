@@ -48,6 +48,10 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'majutsushi/tagbar'
 " fuzzy open file
 Plugin 'ctrlpvim/ctrlp.vim'
+" show git diff
+Plugin 'airblade/vim-gitgutter'
+" multiple python support
+Plugin 'klen/python-mode'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -93,3 +97,6 @@ let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
 " 色块宽度
 let g:indent_guides_guide_size=1
+
+" Override go-to.definition key shortcut to Ctrl-]
+let g:pymode_rope_goto_definition_bind = "<C-]>"
