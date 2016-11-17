@@ -100,3 +100,8 @@ let g:indent_guides_guide_size=1
 
 " Override go-to.definition key shortcut to Ctrl-]
 let g:pymode_rope_goto_definition_bind = "<C-]>"
+
+set autoindent
+set expandtab
+set softtabstop=4
+set shiftwidth=4
