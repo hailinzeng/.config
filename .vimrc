@@ -52,6 +52,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 " multiple python support
 Plugin 'klen/python-mode'
+" highlight trailing whitespace
+Plugin 'ntpeters/vim-better-whitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
