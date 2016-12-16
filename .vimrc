@@ -107,3 +107,6 @@ set autoindent
 set expandtab
 set softtabstop=4
 set shiftwidth=4
+
+" nerdtree clickable
+set mouse=a
