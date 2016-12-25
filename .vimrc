@@ -55,6 +55,8 @@ Plugin 'klen/python-mode'
 " highlight trailing whitespace
 Plugin 'ntpeters/vim-better-whitespace'
 
+Plugin 'Superbil/llvm.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
