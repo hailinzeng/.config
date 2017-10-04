@@ -56,6 +56,7 @@ Plugin 'klen/python-mode'
 Plugin 'ntpeters/vim-better-whitespace'
 
 Plugin 'Superbil/llvm.vim'
+Plugin 'rhysd/vim-clang-format'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
