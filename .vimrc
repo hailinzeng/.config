@@ -55,6 +55,9 @@ Plugin 'klen/python-mode'
 " highlight trailing whitespace
 Plugin 'ntpeters/vim-better-whitespace'
 
+" git wrapper
+Plugin 'tpope/vim-fugitive'
+
 Plugin 'Superbil/llvm.vim'
 Plugin 'rhysd/vim-clang-format'
 
