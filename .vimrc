@@ -60,6 +60,8 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'Superbil/llvm.vim'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'vhda/verilog_systemverilog.vim'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -116,3 +118,8 @@ set shiftwidth=4
 
 " nerdtree clickable
 set mouse=a
+
+" fix nerdtree dir scrambled characters
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
