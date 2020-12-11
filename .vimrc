@@ -54,6 +54,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'klen/python-mode'
 " highlight trailing whitespace
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'bohlender/vim-smt2'
 
 " git wrapper
 Plugin 'tpope/vim-fugitive'
