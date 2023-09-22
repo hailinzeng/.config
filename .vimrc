@@ -83,6 +83,13 @@ set hlsearch
 set incsearch
 set ignorecase
 
+set showmatch  " show matching brackets.
+set smartcase  " do smart case matching
+set hidden     " Hide buffers when they are abandoned
+setlocal noswapfile " do not generate swap file
+set bufhidden=hide
+set ruler
+
 syntax on
 filetype plugin on
 colorscheme molokai
@@ -114,8 +121,22 @@ let g:pymode_rope_goto_definition_bind = "<C-]>"
 
 set autoindent
 set expandtab
-set softtabstop=4
-set shiftwidth=4
+set softtabstop=4 " delete white space with delete key
+set shiftwidth=4 " << and >> move
+set tabstop=2 " tab = 2 white space
+set smartindent " auto indent for new line
+
+set laststatus=2
+set statusline=\ %<%F[%1*%M%*%n%R%H]%=\ %y\ %0(%{&fileformat}\ %{&encoding}\ Ln\ %l,\ Col\ %c/%L%) " 设置在状态行显示的信息
+
+set foldenable " 开始折叠
+set foldmethod=syntax " 设置语法折叠
+set foldcolumn=0 " 设置折叠区域的宽度
+setlocal foldlevel=1 " 设置折叠层数为 1
+
+set autochdir " chdir to the file dir
+set backspace=indent,eol,start
+set magic
 
 " nerdtree clickable
 set mouse=a
